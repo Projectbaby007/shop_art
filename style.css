@@ -31,9 +31,12 @@
 }
 
 #navbar li a{
+    position: relative;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1.2em;
     font-weight: 600;
+    margin: 20px;
+    margin-left: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
     color: #2696e9;
     transition: 0.3s ease;
@@ -117,11 +120,10 @@
     font-size: 1.1em;
     font-weight: 500;
     text-decoration: none;
-    display: block;
     border-radius: 2px;
 }
 
-.home video{
+.home video{   
     z-index: 000;
     position: absolute;
     top: 0;
@@ -131,11 +133,99 @@
     object-fit: cover;
 }
 
+.slider-navigation{
+    z-index: 999;
+    position:-webkit-sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80px);
+    margin-bottom: 12px;
+}
+
+.slider-navigation .nav-btn{
+    width: 14px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    transition: 0.3s ease;
+}
+
+.slider-navigation .nav-btn:not(:last-child){
+    margin-right: 20px;
+}
+
+.slider-navigation .nav-btn:hover{
+    transform: scale(1.2);
+    color: #2696e9;
+}
+
+
 @media (max-width: 1040px){
     header{
         padding: 12px 20px;
     }
     section{
         padding: 100px 20px;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .navbar .active{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(1, 1, 1, 0.5);
+    }
+
+    #navbar .navbar{
+    font-size: 1.2em;
+    margin: 20px;
+    color: #2696e9;
+}
+
+#navbar .active .navbar{
+    background: #222;
+        width: 600px;
+        max-width: 600px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+}
+
+#navbar .navbar a::before{
+    background: #222;
+    height: 5px;
+}
+
+    .menu-btn{
+        background: url(img/menu-alt-right-regular-24.png)no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    .menu-btn.active{
+        z-index: 999;
+        background: url(img/menu-alt-right-regular-24.png)no-repeat;
+        background-size: 30px;
+        background-position: center;
+        transition: 0.3s ease;
     }
 }
