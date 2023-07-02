@@ -69,7 +69,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: #2696e9;
+    background: #fff;
 } 
 
 .home:before{
@@ -144,7 +144,7 @@
 .slider-navigation .nav-btn{
     width: 14px;
     height: 12px;
-    background: #fff;
+    background: #000;
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
@@ -162,6 +162,31 @@
 
 .section-p1{
     padding: 40px 80px;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.3s;
 }
 
 .section-m1{
@@ -278,8 +303,7 @@
 
 #art1 .art .des h5{
     padding-top: 7px;
-    color: #2696e9
-    font-size: 16px;
+    color: #2696e9;
 }
 
 #art1 .art .des h4{
@@ -310,8 +334,8 @@
     text-align: center;
     justify-content: center;
     background-image: url(img/banner007.png);
-    width: 100%;
-    height: 45vh;
+    width: 1000%;
+    height: 40vh;
     background-size: cover;
     background-position: center;
 }
@@ -331,25 +355,146 @@
 }
 
 #banner h2 span{
+    color: blue;
+}
+
+#banner button:hover{
+    color: #cce7cc;
+    background: #2696e9;
+}
+
+#sm-banner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url(img/gallery.jpg);
+    min-width: 500px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+#sm-banner .banner-box2{
+    background-image: url(img/african3.jpeg);
+}
+
+#sm-banner .banner-box3{
+    background-image: url(img/bust2.jpeg);
+}
+
+#sm-banner .banner-box4{
+    background-image: url(img/louvre.jpeg);
+}
+
+#sm-banner h4{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#sm-banner h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#sm-banner .banner-box:hover button{
+    background: #2696e9;
+    border: 1px solid #2696e9;
+}
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(img/banner3.jpeg);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #000;
+}
+
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
     color: #2696e9;
 }
 
-#banner .button .normal{
-    font-size: 14px;
+#newsletter p{
+    font-size: 15px;
     font-weight: 600;
-    padding: 15px 30px;
-    color: #1a1a1a;
-    background-color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    transition: 0.2s;
 }
 
-#banner .button:hover{
-    background: #2696e9;
-    color: #fff;
+#newsletter p span{
+    color: #ffbd29;
+}
+
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button{
+    background-color: #2696e9;
+    color: #cdd4f8;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
 }
 
 
