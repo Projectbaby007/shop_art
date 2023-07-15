@@ -58,6 +58,14 @@
     left: 20px;
 }
 
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+
 #section{
     padding: 100px 20px;
 }
@@ -523,7 +531,7 @@ footer a{
         transition: 0.3s;
     }
 
-    #navbar.active{
+    #navbar .active{
         right: 0px;
     }
 
@@ -532,21 +540,22 @@ footer a{
     }
     
     #mobile{
-    display: none;
+    display: flex;
     align-items: center;
     }
 
     #mobile i{
-        color: #000;
+        color: #fff;
         font-size: 24px;
         padding-left: 20px;
     }
 
     #close{
         position: absolute;
+	display: initial;
         top: 30px;
         left: 30px;
-        color: black;
+        color: #fff;
         font-size: 24px;
     }
 
