@@ -15,5 +15,5 @@ def hello_shopart():
 
 
 if __name__ == '__main__':
-    app.run(host='54.160.113.81’, port=5000)
+    app.run(host='0.0.0.0’, port=5000)
 
